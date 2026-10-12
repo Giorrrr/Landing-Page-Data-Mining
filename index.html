@@ -24,11 +24,10 @@
         <a href="#cara-kerja">Cara Kerja</a>
         <a href="#fitur">Fitur</a>
         <a href="#demo">Demo</a>
-        <a href="#harga">Harga</a>
+        <a href="#harga">Lisensi</a>
       </nav>
       <div class="nav__cta">
-        <a href="#download" class="btn btn--ghost">Masuk</a>
-        <a href="#download" class="btn btn--primary">Coba Gratis</a>
+        <a href="https://github.com/Briant-s/file_renamer_organizer/blob/main/README.md#prerequisites" class="btn btn--primary" target="_blank" rel="noopener">Unduh TiFo</a>
       </div>
       <button class="nav__toggle" id="navToggle" aria-label="Buka menu">
         <span></span><span></span><span></span>
@@ -52,9 +51,9 @@
         </div>
         <div class="hero__trust">
           <div class="avatars" aria-hidden="true">
-            <span>A</span><span>R</span><span>M</span><span>+</span>
+            <span>📄</span><span>📘</span><span>💰</span><span>+</span>
           </div>
-          <p>Dipercaya <strong>12.000+</strong> pengguna untuk merapikan <strong>4 juta+</strong> file</p>
+          <p>Berjalan <strong>100% lokal</strong> di perangkatmu · bayar sekali, <strong>pakai selamanya</strong></p>
         </div>
       </div>
 
@@ -69,12 +68,12 @@
             <div class="col">
               <p class="col__label col__label--mess">Sebelum · berantakan</p>
               <ul class="filelist">
-                <li>📄 IMG_20431.jpg</li>
                 <li>📄 dokumen (2) final FIX.pdf</li>
                 <li>📄 untitled.docx</li>
-                <li>📄 scan0032.png</li>
-                <li>📄 rekaman baru.mp3</li>
                 <li>📄 asdf123.xlsx</li>
+                <li>📄 catatan.txt</li>
+                <li>📄 data penjualan.xlsx</li>
+                <li>📄 KTR_draft.docx</li>
               </ul>
             </div>
             <div class="arrow" aria-hidden="true">
@@ -83,10 +82,9 @@
             <div class="col">
               <p class="col__label col__label--clean">Sesudah · rapi</p>
               <ul class="folderlist">
-                <li>📁 Foto Liburan <em>3</em></li>
-                <li>📁 Dokumen Kerja <em>2</em></li>
-                <li>📁 Keuangan <em>1</em></li>
-                <li>📁 Audio <em>1</em></li>
+                <li>📁 Dokumen Kerja <em>3</em></li>
+                <li>📁 Keuangan <em>2</em></li>
+                <li>📁 Kontrak <em>1</em></li>
               </ul>
             </div>
           </div>
@@ -99,8 +97,8 @@
   <section class="stats">
     <div class="container stats__grid">
       <div class="stat"><strong>4 dtk</strong><span>rata-rata proses 1000 file</span></div>
-      <div class="stat"><strong>98%</strong><span>akurasi pengelompokan</span></div>
-      <div class="stat"><strong>40+</strong><span>tipe file didukung</span></div>
+      <div class="stat"><strong>PDF·Word·Excel·TXT</strong><span>format dokumen didukung</span></div>
+      <div class="stat"><strong>Sekali bayar</strong><span>lisensi seumur hidup</span></div>
       <div class="stat"><strong>100%</strong><span>diproses lokal & aman</span></div>
     </div>
   </section>
@@ -117,7 +115,7 @@
         <div class="step">
           <div class="step__num">1</div>
           <h3>Pilih folder</h3>
-          <p>Tarik & lepas folder berisi file berantakan, atau pilih dari komputermu.</p>
+          <p>Masukkan path folder berisi file berantakan yang ingin kamu rapikan.</p>
         </div>
         <div class="step">
           <div class="step__num">2</div>
@@ -127,7 +125,8 @@
         <div class="step">
           <div class="step__num">3</div>
           <h3>Otomatis terkelompok</h3>
-          <p>File langsung disusun rapi ke folder sesuai kategori. Bisa di-undo kapan saja.</p>
+          <p>File langsung disusun rapi ke folder sesuai kategori.</p>
+          <!-- <p>File langsung disusun rapi ke folder sesuai kategori. Bisa di-undo kapan saja.</p> -->
         </div>
       </div>
     </div>
@@ -144,7 +143,7 @@
         <article class="feature">
           <div class="feature__icon">✍️</div>
           <h3>Auto-Rename Cerdas</h3>
-          <p>Nama file acak seperti <em>IMG_20431.jpg</em> berubah jadi <em>Pantai-Bali-Sunset.jpg</em> secara otomatis.</p>
+          <p>Nama file acak seperti <em>untitled.docx</em> berubah jadi <em>Proposal-Proyek-Q3.docx</em> secara otomatis.</p>
         </article>
         <article class="feature">
           <div class="feature__icon">🧩</div>
@@ -162,9 +161,9 @@
           <p>Pemrosesan berjalan lokal di perangkatmu. File tidak pernah meninggalkan komputer.</p>
         </article>
         <article class="feature">
-          <div class="feature__icon">↩️</div>
-          <h3>Undo Sekali Klik</h3>
-          <p>Tidak suka hasilnya? Kembalikan semua ke kondisi semula secara instan.</p>
+          <div class="feature__icon">📁</div>
+          <h3>Dukungan Banyak Format</h3>
+          <p>Mengenali berbagai dokumen seperti PDF, Word, Excel, dan TXT dalam satu proses.</p>
         </article>
         <article class="feature">
           <div class="feature__icon">⚙️</div>
@@ -186,12 +185,21 @@
       <div class="demo">
         <div class="demo__panel">
           <ul class="demo__files" id="demoFiles">
+            <!-- Daftar lama (mengandung foto & audio yang belum didukung sistem) -->
+            <!--
             <li data-cat="Foto">📄 IMG_20431.jpg</li>
             <li data-cat="Dokumen">📄 untitled.docx</li>
             <li data-cat="Keuangan">📄 asdf123.xlsx</li>
             <li data-cat="Foto">📄 scan0032.png</li>
             <li data-cat="Audio">📄 rekaman baru.mp3</li>
             <li data-cat="Dokumen">📄 dokumen final FIX.pdf</li>
+            -->
+            <li data-cat="Dokumen">📄 untitled (1).docx</li>
+            <li data-cat="Keuangan">📄 asdf123.xlsx</li>
+            <li data-cat="Dokumen">📄 dokumen final FIX REV2.pdf</li>
+            <li data-cat="Dokumen">📄 catatan.txt</li>
+            <li data-cat="Keuangan">📄 data penjualan.xlsx</li>
+            <li data-cat="Kontrak">📄 KTR_draft.docx</li>
           </ul>
           <button class="btn btn--primary btn--lg demo__btn" id="demoBtn">▶ Rapikan Sekarang</button>
         </div>
@@ -200,7 +208,8 @@
     </div>
   </section>
 
-  <!-- Harga -->
+  <!-- Harga (LAMA — model paket langganan, tidak dipakai) -->
+  <!--
   <section class="section section--alt" id="harga">
     <div class="container">
       <div class="section__head">
@@ -226,7 +235,7 @@
             <li>✔ File tak terbatas</li>
             <li>✔ Aturan penamaan kustom</li>
             <li>✔ Clustering AI lanjutan</li>
-            <li>✔ Riwayat &amp; undo tanpa batas</li>
+            <li>✔ Riwayat &amp; pratinjau tanpa batas</li>
           </ul>
           <a href="#download" class="btn btn--primary btn--block">Coba 14 Hari Gratis</a>
         </div>
@@ -243,6 +252,33 @@
       </div>
     </div>
   </section>
+  -->
+
+  <!-- Lisensi -->
+  <section class="section section--alt" id="harga">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow">Lisensi</span>
+        <h2>Beli sekali, pakai selamanya</h2>
+        <p>Tanpa langganan bulanan. Satu kali pembelian lisensi, TiFo jadi milikmu sepenuhnya.</p>
+      </div>
+      <div class="pricing pricing--single">
+        <div class="price price--featured">
+          <span class="price__tag">Lisensi Seumur Hidup</span>
+          <h3>Lisensi TiFo</h3>
+          <p class="price__amt">Rp2.499.000<span>/sekali</span></p>
+          <ul>
+            <li>✔ Bayar sekali, pakai selamanya</li>
+            <li>✔ Auto-rename &amp; clustering penuh</li>
+            <li>✔ Aturan penamaan kustom</li>
+            <li>✔ Pemrosesan 100% lokal</li>
+            <li>✔ Pembaruan versi gratis</li>
+          </ul>
+          <a href="https://github.com/Briant-s/file_renamer_organizer/blob/main/README.md#prerequisites" class="btn btn--primary btn--block" target="_blank" rel="noopener">Beli Lisensi</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- CTA -->
   <section class="cta" id="download">
@@ -250,8 +286,7 @@
       <h2>Siap punya folder yang rapi selamanya?</h2>
       <p>Unduh TiFo dan rasakan bedanya dalam 30 detik pertama.</p>
       <div class="cta__actions">
-        <a href="#" class="btn btn--light btn--lg">⬇ Unduh untuk Windows</a>
-        <a href="#" class="btn btn--outline btn--lg">⬇ Unduh untuk macOS</a>
+        <a href="https://github.com/Briant-s/file_renamer_organizer/blob/main/README.md#prerequisites" class="btn btn--light btn--lg" target="_blank" rel="noopener">⬇ Unduh TiFo</a>
       </div>
     </div>
   </section>
@@ -269,8 +304,9 @@
       <div class="footer__col">
         <h4>Produk</h4>
         <a href="#fitur">Fitur</a>
-        <a href="#harga">Harga</a>
+        <a href="#harga">Lisensi</a>
         <a href="#demo">Demo</a>
+        <a href="https://github.com/Briant-s/file_renamer_organizer/blob/main/README.md#prerequisites" target="_blank" rel="noopener">Unduh TiFo</a>
       </div>
       <div class="footer__col">
         <h4>Perusahaan</h4>
@@ -280,9 +316,9 @@
       </div>
       <div class="footer__col">
         <h4>Bantuan</h4>
-        <a href="#">Dokumentasi</a>
+        <a href="https://github.com/Briant-s/file_renamer_organizer/blob/main/README.md" target="_blank" rel="noopener">Dokumentasi</a>
+        <a href="https://github.com/Briant-s/file_renamer_organizer" target="_blank" rel="noopener">GitHub</a>
         <a href="#">Kontak</a>
-        <a href="#">Privasi</a>
       </div>
     </div>
     <div class="container footer__bottom">

@@ -23,6 +23,8 @@ const demoFiles = document.getElementById('demoFiles');
 const demoResult = document.getElementById('demoResult');
 
 // Nama "cerdas" hasil auto-rename per file
+// Daftar lama (mengandung foto & audio yang belum didukung sistem)
+/*
 const renameMap = {
   'IMG_20431.jpg': 'Pantai-Bali-Sunset.jpg',
   'untitled.docx': 'Proposal-Proyek-Q3.docx',
@@ -31,8 +33,17 @@ const renameMap = {
   'rekaman baru.mp3': 'Rekaman-Rapat-Tim.mp3',
   'dokumen final FIX.pdf': 'Kontrak-Klien-2026.pdf',
 };
+*/
+const renameMap = {
+  'untitled (1).docx': 'Proposal-Proyek-Q3.docx',
+  'asdf123.xlsx': 'Laporan-Keuangan-Agustus.xlsx',
+  'dokumen final FIX REV2.pdf': 'Laporan-Tahunan-2026.pdf',
+  'catatan.txt': 'Notulen-Rapat-Tim.txt',
+  'data penjualan.xlsx': 'Rekap-Penjualan-Q3.xlsx',
+  'KTR_draft.docx': 'Kontrak-Klien-2026.docx',
+};
 
-const catIcon = { Foto: '🖼️', Dokumen: '📘', Keuangan: '💰', Audio: '🎧' };
+const catIcon = { Dokumen: '📘', Keuangan: '💰', Kontrak: '📝' };
 
 let isRunning = false;
 demoResult.innerHTML = '<p class="placeholder">Hasil pengelompokan akan muncul di sini setelah kamu menekan tombol.</p>';
